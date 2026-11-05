@@ -1,4 +1,13 @@
 //BST Searching – Recursive + Iterative
+BST Searching mein hum tree
+ke root node se value check karte hain.
+Agar value chhoti hai toh left
+aur badi hai toh right jaate hain. 
+Recursive mein function
+khud call hota hai, 
+jabki Iterative mein while 
+loop use hota hai. 
+Value milne par Element Found print hota hai.
 #include <iostream>
 using namespace std;
 
