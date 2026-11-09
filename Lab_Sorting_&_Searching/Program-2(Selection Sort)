@@ -1,0 +1,41 @@
+//Selection Sort
+logic:Selection Sort mein har
+pass mein unsorted array ka
+smallest element find karte
+hain aur usse current position
+par swap kar dete hain. 
+Ye process sorting complete hone
+tak repeat hota hai.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5] = {5, 3, 8, 1, 2};
+    int minIndex, temp;
+
+    for (int i = 0; i < 5 - 1; i++) {
+
+        minIndex = i;
+
+        for (int j = i + 1; j < 5; j++) {
+
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+
+    cout << "Sorted Array: ";
+
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+output:
+Sorted Array: 1 2 3 5 8
